@@ -12,4 +12,4 @@ web = webDriver()
 
 web.googleLogin(username,password)
 web.openConsole()
-web.openProject
+web.openProject(gcpid)
