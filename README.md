@@ -1,6 +1,6 @@
 # provision-gcp-qwiklabs
 
-### While doing [Qwiklabs](https://www.qwiklabs.com/quests/118), you are given a temprory GCP account to perform all the tasks. with each lab you need to login and accept all T&C's etc. which is annoying. here's a python script to automate all that so you can focus more on labs :)
+### While doing [Qwiklabs](https://www.qwiklabs.com/), you are given a temprory GCP account to perform all the tasks. with each lab you need to login and accept all T&C's etc. which is annoying. here's a python script to automate all that so you can focus more on labs :)
 
 <br>
 
