@@ -66,10 +66,11 @@ class webDriver:
                 driver.find_element_by_id("submit").click()
                 sleep(4)
             try:
-                driver.find_element_by_id("accept").click()
+            	sleep(2)
+            	driver.find_element_by_id("accept").click()
             except:
-                sleep(2)
-                driver.find_element_by_id("accept").click()
+                sleep(1)
+
         except Exception as e:
 
             print("\nLogin failed, please open an issue on GitHub")
@@ -82,7 +83,7 @@ class webDriver:
 
         driver.get(BASE_URL)
 
-        driver.implicitly_wait(5)
+        driver.implicitly_wait(12)
 
         try:
 
@@ -94,8 +95,9 @@ class webDriver:
             dropDown = driver.find_element_by_xpath("/html/body/div[3]/div[2]/div/mat-dialog-container/xap-deferred-loader-outlet/ng-component/mat-dialog-content/form/cfc-tos-checkboxes/form/div[1]/cfc-loader/div/mat-form-field")
             dropDown.click()
 
+            # THIS SELECTS COUNTRY AS INDIA
             countryButton = driver.find_elements_by_xpath("//*[contains(text(), 'India')]")
-            countryButton[1].click()
+            countryButton[2].click()
 
             sleep(1)
 
