@@ -87,19 +87,19 @@ class webDriver:
 
         try:
 
-            checkBox = driver.find_element_by_xpath("//*[@id='mat-checkbox-2']/label/div")
+            checkBox = driver.find_element_by_xpath("//*[@id='mat-checkbox-2']/label/span[1]")
             checkBox.click()
 
             sleep(1)
 
-            dropDown = driver.find_element_by_xpath("/html/body/div[3]/div[2]/div/mat-dialog-container/xap-deferred-loader-outlet/ng-component/mat-dialog-content/form/cfc-tos-checkboxes/form/div[1]/cfc-loader/div/mat-form-field")
-            dropDown.click()
+            # dropDown = driver.find_element_by_xpath("/html/body/div[3]/div[2]/div/mat-dialog-container/xap-deferred-loader-outlet/ng-component/mat-dialog-content/form/cfc-tos-checkboxes/form/div[1]/cfc-loader/div/mat-form-field")
+            # dropDown.click()
 
-            # THIS SELECTS COUNTRY AS INDIA
-            countryButton = driver.find_elements_by_xpath("//*[contains(text(), 'India')]")
-            countryButton[2].click()
+            # # THIS SELECTS COUNTRY AS INDIA
+            # countryButton = driver.find_elements_by_xpath("//*[contains(text(), 'India')]")
+            # # countryButton[2].click()
 
-            sleep(1)
+            # sleep(1)
 
             agreeButton = driver.find_elements_by_xpath("//*[contains(text(), 'Agree and continue')]")
             agreeButton[0].click()
